@@ -26,6 +26,12 @@ noteContainer.addEventListener('click', (e) => {
 
     else if(e.target === 'p') {
         notes = document.querySelectorAll('.input-box');
-    }
+        notes.forEach(nt => {
+            nt.onkeyup = () => {
+                updateStorage();
+            }
+        })
+
+    } 
     
 } )
