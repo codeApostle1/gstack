@@ -13,6 +13,10 @@ createBtn.addEventListener('click', ()=> {
     noteContainer.appendChild(inputBox).append(img);
 })
 
+function showNotes(){
+    
+}
+
 function updateStorage() {
     localStorage.setItem("notes", noteContainer.innerHTML)
 }
